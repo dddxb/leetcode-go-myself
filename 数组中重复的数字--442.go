@@ -1,14 +1,12 @@
 package main
 
-import "fmt"
-
-func main() {
-	nums := []int{4,3,2,7,8,2,3,1}
-	result1 := findDuplicates1(nums)
-	fmt.Println(result1)
-	result2 := findDuplicates2(nums)
-	fmt.Println(result2)
-}
+//func main() {
+//	nums := []int{4,3,2,7,8,2,3,1}
+//	result1 := findDuplicates1(nums)
+//	fmt.Println(result1)
+//	result2 := findDuplicates2(nums)
+//	fmt.Println(result2)
+//}
 //方案一：利用map键值的唯一性，判断map里是否含有某键值，只需o(1)时间
 //时间复杂度o(n),空间复杂度就是新建map所占用的空间
 func findDuplicates1(nums []int) []int {
